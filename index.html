@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoseBloom | Nature's Most Beautiful Fragrance — Organic Rose Perfume</title>
+  <meta name="description" content="Discover RoseBloom, a delicate handmade organic perfume prototype crafted from fresh rose petal extraction, distilled water, cosmetic ethanol, and plant glycerin. Capture the essence of nature.">
+  <meta name="keywords" content="rose perfume, organic rose fragrance, handmade perfume prototype, botanical extraction, floral scent, sustainable perfume">
+  <meta name="author" content="RoseBloom Botanical Labs">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌹</text></svg>">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <div class="announcement-text">
+      <span>🌹</span>
+      <span><strong>Student Prototype Demonstration:</strong> Hand-harvested rose petal extraction &bull; Batch <strong>#RB-001</strong></span>
+    </div>
+    <div class="announcement-actions">
+      <button class="settings-pill" onclick="openPriceModal()" title="Customize Sample Prices & Currency">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+        <span>Edit Sample Prices</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Sticky Luxury Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="#home" class="brand-logo" aria-label="RoseBloom Home">
+        <div class="brand-symbol">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a4 4 0 0 0-4 4c0 3 4 8 4 8s4-5 4-8a4 4 0 0 0-4-4z"/>
+            <path d="M12 14v8"/>
+            <path d="M8 18c2-1 4-1 4 0"/>
+            <path d="M16 17c-2-1-4-1-4 0"/>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">RoseBloom</span>
+          <span class="brand-subtitle">Natural Rose Perfume</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Our Story</a></li>
+          <li><a href="#product-showcase" class="nav-link">The Perfume</a></li>
+          <li><a href="#ingredients" class="nav-link">Ingredients</a></li>
+          <li><a href="#process" class="nav-link">How It's Made</a></li>
+          <li><a href="#olfactory" class="nav-link">Fragrance Notes</a></li>
+          <li><a href="#lab-specs" class="nav-link">Prototype Lab</a></li>
+          <li><a href="#reviews" class="nav-link">Peer Reviews</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Scent Quiz trigger -->
+        <button class="header-action-btn" onclick="openQuizModal()" title="Take Scent Matcher Quiz" aria-label="Scent Matcher Quiz">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+        </button>
+
+        <!-- Cart trigger -->
+        <button class="header-action-btn" onclick="openCart()" id="cart-toggle-btn" title="View Sample Cart" aria-label="View Cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge" id="cart-badge-count">1</span>
+        </button>
+
+        <!-- Mobile hamburger -->
+        <button class="mobile-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         SECTION A: HERO SECTION
+         ==================================================================== -->
+    <section class="hero-section" id="home">
+      <!-- Soft ambient decorative blobs -->
+      <div class="hero-bg-blobs" aria-hidden="true">
+        <div class="hero-blob-1"></div>
+        <div class="hero-blob-2"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="section-label">
+            <span class="badge-tag badge-prototype">Batch #RB-001 Prototype</span>
+            <span>Botanical Extraction</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Nature's Most<br>
+            <em>Beautiful Fragrance.</em>
+          </h1>
+
+          <p class="hero-subtitle">
+            Discover the delicate charm of fresh rose petals in our nature-inspired handmade perfume. 
+            Formulated from simple, honest botanical extraction.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#product-showcase" class="btn btn-primary" id="btn-explore-perfume">
+              <span>Explore Our Perfume</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </a>
+            <a href="#process" class="btn btn-secondary" id="btn-how-its-made">
+              <span>How It's Made</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </a>
+          </div>
+
+          <div class="hero-meta-strip">
+            <div class="meta-item">
+              <div class="meta-icon">🌸</div>
+              <div class="meta-text">
+                <span class="meta-label">Primary Note</span>
+                <span class="meta-value">Fresh Rose Petals</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <div class="meta-icon">🧪</div>
+              <div class="meta-text">
+                <span class="meta-label">Clean Formula</span>
+                <span class="meta-value">4 Essential Ingredients</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <div class="meta-icon">🌿</div>
+              <div class="meta-text">
+                <span class="meta-label">Eco Philosophy</span>
+                <span class="meta-value">Sustainable Glass</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Frame with Realistic Bottle -->
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img 
+              src="assets/images/rosebloom-hero.jpg" 
+              alt="RoseBloom luxury glass perfume bottle resting on warm stone surrounded by delicate morning pink rose petals"
+              loading="eager"
+            >
+          </div>
+
+          <!-- Floating badge: Formulation Prototype -->
+          <div class="floating-perfume-badge">
+            <div class="badge-title">
+              <span>✨</span>
+              <span>Handmade Prototype</span>
+            </div>
+            <div class="badge-desc">
+              Developed with cold petal maceration &amp; cosmetic-grade ethanol base.
+            </div>
+          </div>
+
+          <!-- Floating badge: Floral notes -->
+          <div class="floating-note-badge">
+            <span>🌹</span>
+            <span>Dewy Damask Rose Aroma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Strip -->
+    <section class="highlights-bar" aria-label="Brand Pillars">
+      <div class="container highlights-grid">
+        <div class="highlight-box">
+          <div class="highlight-icon-wrap">🌹</div>
+          <div>
+            <h4>Fresh Rose Extraction</h4>
+            <p>Aromatic volatiles captured directly from garden rose petals harvested at morning dew.</p>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <div class="highlight-icon-wrap">💧</div>
+          <div>
+            <h4>Transparent Formulation</h4>
+            <p>Distilled water, cosmetic-grade ethanol, and plant glycerin. Honest, simple composition.</p>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <div class="highlight-icon-wrap">🌱</div>
+          <div>
+            <h4>Eco-Friendly Ethos</h4>
+            <p>Recyclable glass flacon, biodegradable packaging, and zero animal testing.</p>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <div class="highlight-icon-wrap">🎓</div>
+          <div>
+            <h4>Student Innovation</h4>
+            <p>Developed as a chemical prototyping research project exploring natural fragrance science.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION B: ABOUT US
+         ==================================================================== -->
+    <section class="section-py about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- About Media Stack -->
+          <div class="about-media-stack">
+            <div class="about-primary-img">
+              <img 
+                src="assets/images/lab-extraction.jpg" 
+                alt="Artisanal perfume laboratory setup with glass flask and rose petals maceration"
+                loading="lazy"
+              >
+            </div>
+            <div class="about-secondary-card">
+              <div class="quote-symbol">“</div>
+              <p>Capture the essence of nature in its purest, most delicate morning bloom.</p>
+              <div class="quote-author">— The RoseBloom Project</div>
+            </div>
+          </div>
+
+          <!-- About Story Content -->
+          <div class="about-content">
+            <div class="section-label">Our Story &amp; Philosophy</div>
+            <h2>Handmade With Passion &bull; Rooted in Natural Science</h2>
+            
+            <p style="margin-top: 1.2rem; font-size: 1.05rem;">
+              RoseBloom began as an exploratory chemical prototyping project in our university laboratory. 
+              Inspired by the timeless beauty of freshly blossomed roses, we set out to investigate whether 
+              an elegant, nature-inspired fragrance could be created using accessible botanical extraction 
+              techniques without industrial synthetic fixatives.
+            </p>
+
+            <!-- Highlighted Mission Statement -->
+            <div class="mission-statement-card">
+              <h4>Our Mission Statement</h4>
+              <blockquote>
+                “Bringing the beauty of roses into an elegant, nature-inspired fragrance.”
+              </blockquote>
+            </div>
+
+            <!-- Pillars of our project -->
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <span class="pillar-num">01</span>
+                <div>
+                  <h5>Fresh Floral Inspiration</h5>
+                  <p>Observing morning roses, we captured the authentic dewy aroma that synthetic blends often miss.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <span class="pillar-num">02</span>
+                <div>
+                  <h5>Simple Formulation</h5>
+                  <p>Focusing on 4 high-purity components: petals, distilled water, cosmetic ethanol, and glycerin.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <span class="pillar-num">03</span>
+                <div>
+                  <h5>Sustainable Design</h5>
+                  <p>Reusable glass bottles and unbleached kraft paper packaging to minimize ecological footprint.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <span class="pillar-num">04</span>
+                <div>
+                  <h5>Student Accessible</h5>
+                  <p>Proving that artisan perfumery can be educational, transparent, and realistically priced.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Scientific Prototype Transparency Box -->
+            <div class="prototype-transparency-box">
+              <div class="transparency-icon">💡</div>
+              <div>
+                <strong>Ethical Academic Prototype Notice:</strong>
+                <p>
+                  RoseBloom is presented truthfully as an experimental handmade prototype. In adherence to honest scientific 
+                  communication, we make no unsubstantiated claims such as "100% chemical-free" (ethanol is a chemical solvent), 
+                  "hypoallergenic", or "guaranteed all-day longevity". We invite testers to appreciate it as a gentle, 
+                  intimate skin fragrance developed with genuine botanical care.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION C: PRODUCT DETAILS & INTERACTIVE SHOWCASE
+         ==================================================================== -->
+    <section class="section-py product-showcase-section" id="product-showcase">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Featured Product</div>
+          <h2>The Signature Fragrance</h2>
+          <p>
+            Handmade in limited batches. Experience the crisp, romantic sweetness of morning roses 
+            balanced with gentle skin-softening plant glycerin.
+          </p>
+        </div>
+
+        <div class="product-card-frame">
+          <div class="product-grid">
+            <!-- Left: Interactive Gallery -->
+            <div class="product-gallery">
+              <div class="product-main-view">
+                <span class="badge-tag badge-prototype product-tag-pill">Batch #RB-001 Prototype</span>
+                <img 
+                  id="product-main-image" 
+                  src="assets/images/rosebloom-hero.jpg" 
+                  alt="RoseBloom Eau de Parfum main presentation bottle"
+                >
+              </div>
+
+              <div class="gallery-thumbs" aria-label="Product Image Gallery">
+                <button class="thumb-btn active" data-full="assets/images/rosebloom-hero.jpg" title="Main Flacon View">
+                  <img src="assets/images/rosebloom-hero.jpg" alt="RoseBloom flacon">
+                </button>
+                <button class="thumb-btn" data-full="assets/images/sustainable-box.jpg" title="Sustainable Packaging">
+                  <img src="assets/images/sustainable-box.jpg" alt="Recycled packaging box">
+                </button>
+                <button class="thumb-btn" data-full="assets/images/lab-extraction.jpg" title="Laboratory Extraction View">
+                  <img src="assets/images/lab-extraction.jpg" alt="Petal extraction beaker">
+                </button>
+                <button class="thumb-btn" data-full="assets/images/rose-petals.jpg" title="Fresh Damask Petals">
+                  <img src="assets/images/rose-petals.jpg" alt="Fresh rose petals macro">
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Product Info & Configuration -->
+            <div class="product-info-wrap">
+              <div class="product-meta-header">
+                <span class="badge-tag">Handcrafted Botanical Prototype</span>
+                <span class="text-muted" style="font-size: 0.8rem;">Stock: Small Batch Available</span>
+              </div>
+
+              <h3 class="product-title font-display">RoseBloom Eau de Parfum</h3>
+              <p class="product-tagline-text">“Capture the Essence of Nature.”</p>
+
+              <!-- Dynamic Editable Price Row -->
+              <div class="price-row">
+                <div class="current-price" id="product-price-display">$28.00</div>
+                <div class="price-note">Sample prototype pricing &bull; Tax included</div>
+                <a class="edit-price-link" onclick="openPriceModal()" title="Modify sample prices for demonstration or grading">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                  <span>Edit Sample Price</span>
+                </a>
+              </div>
+
+              <p class="product-desc">
+                RoseBloom is an artisanal, floral perfume prototype developed from natural rose-petal extraction. 
+                Designed for students, young adults, and conscious perfume enthusiasts, it offers a soft, intimate floral 
+                sillage that radiates grace without the heavy artificial sharpness of synthetic commercial sprays.
+              </p>
+
+              <!-- Bottle Size Selector -->
+              <div class="size-selector-wrap">
+                <div class="option-group-label">
+                  <span>Select Bottle Size</span>
+                  <span class="text-muted" style="font-size: 0.75rem;">Reusable Glass Flacons</span>
+                </div>
+                <div class="size-selector-grid">
+                  <!-- 30 mL option -->
+                  <div class="size-option-card" id="size-card-30ml" data-size="30ml">
+                    <div class="size-option-header">
+                      <span class="size-name">30 mL</span>
+                      <span class="size-price-tag">$18.00</span>
+                    </div>
+                    <span class="size-subtitle">Travel &amp; Discovery Size</span>
+                  </div>
+
+                  <!-- 50 mL option (Default active) -->
+                  <div class="size-option-card active" id="size-card-50ml" data-size="50ml">
+                    <div class="size-option-header">
+                      <span class="size-name">50 mL</span>
+                      <span class="size-price-tag">$28.00</span>
+                    </div>
+                    <span class="size-subtitle">Full Flacon &bull; Signature Edition</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fragrance Profile Preview -->
+              <div class="fragrance-profile-pill-box">
+                <div class="profile-pill-header">
+                  <span>🌸</span>
+                  <span>Fragrance Profile &amp; Sensory Notes</span>
+                </div>
+                <div class="notes-chips">
+                  <span class="note-chip">Top: Morning Dew</span>
+                  <span class="note-chip">Heart: Damask Rose Petals</span>
+                  <span class="note-chip">Base: Warm Botanical Veil</span>
+                  <span class="note-chip">Family: Floral &amp; Fresh</span>
+                </div>
+              </div>
+
+              <!-- Quantity & Purchase Controls -->
+              <div class="purchase-controls">
+                <div class="qty-control" aria-label="Quantity Selector">
+                  <button class="qty-btn" id="product-qty-minus" aria-label="Decrease quantity">−</button>
+                  <span class="qty-display" id="product-qty-value">1</span>
+                  <button class="qty-btn" id="product-qty-plus" aria-label="Increase quantity">+</button>
+                </div>
+                <button class="btn btn-primary btn-add-cart" id="btn-add-to-cart" onclick="addToCart()">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  <span>Add Prototype Sample to Cart</span>
+                </button>
+              </div>
+
+              <!-- Storage & Care Instructions -->
+              <div class="storage-instruction-box">
+                <div class="storage-icon">🌡️</div>
+                <div>
+                  <h5>Storage &amp; Preservation Instructions</h5>
+                  <p>
+                    Store in a cool, dark environment away from direct sunlight and heat sources (recommended 15°C - 22°C). 
+                    Keep the glass cap tightly sealed to preserve natural aromatic volatiles and prevent premature alcohol evaporation.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION D: INGREDIENTS VISUAL SECTION
+         ==================================================================== -->
+    <section class="section-py ingredients-section" id="ingredients">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Pure Formulation</div>
+          <h2>The Four Essential Ingredients</h2>
+          <p>
+            No undisclosed binders or synthetic fixatives. 
+            Every raw material in RoseBloom was selected for a precise olfactory or chemical function.
+          </p>
+        </div>
+
+        <div class="ingredients-grid">
+          <!-- Ingredient 1: Fresh Rose Petals -->
+          <article class="ingredient-card">
+            <div class="ingredient-img-wrapper">
+              <img src="assets/images/rose-petals.jpg" alt="Macro view of fresh pink rose petals with dew" loading="lazy">
+              <span class="ingredient-pill-role">Fragrance Core</span>
+            </div>
+            <div class="ingredient-body">
+              <span class="ingredient-number">Ingredient 01</span>
+              <h3 class="ingredient-title">Fresh Rose Petals</h3>
+              <p class="ingredient-desc">
+                Hand-picked fresh rose petals serve as the primary source of the natural rose aroma. 
+                Their volatile aromatic oils give RoseBloom its characteristic delicate and romantic floral signature.
+              </p>
+              <div class="ingredient-meta-row">
+                <span class="ingredient-label-muted">Extraction Method</span>
+                <span class="ingredient-value-bold">Gentle Maceration</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Ingredient 2: Distilled Water -->
+          <article class="ingredient-card">
+            <div class="ingredient-img-wrapper">
+              <img src="assets/images/ingredients-still.jpg" alt="Pure distilled water in petri dish with glass pipettes" loading="lazy">
+              <span class="ingredient-pill-role">Hydrosol Base</span>
+            </div>
+            <div class="ingredient-body">
+              <span class="ingredient-number">Ingredient 02</span>
+              <h3 class="ingredient-title">Distilled Water</h3>
+              <p class="ingredient-desc">
+                Deionized, steam-distilled water free from mineral salts and contaminants. 
+                Used during the extraction process to produce a pure rose hydrosol that gently softens the fragrance.
+              </p>
+              <div class="ingredient-meta-row">
+                <span class="ingredient-label-muted">Purity Grade</span>
+                <span class="ingredient-value-bold">Steam Distilled</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Ingredient 3: Cosmetic-Grade Ethanol -->
+          <article class="ingredient-card">
+            <div class="ingredient-img-wrapper">
+              <img src="assets/images/lab-extraction.jpg" alt="Ethanol blending in chemical extraction flask" loading="lazy">
+              <span class="ingredient-pill-role">Solvent &amp; Base</span>
+            </div>
+            <div class="ingredient-body">
+              <span class="ingredient-number">Ingredient 03</span>
+              <h3 class="ingredient-title">Cosmetic Ethanol</h3>
+              <p class="ingredient-desc">
+                High-purity cosmetic-grade ethanol acts as the universal perfume solvent. 
+                It dissolves floral terpenes, delivers a fine mist upon atomization, and naturally preserves the blend.
+              </p>
+              <div class="ingredient-meta-row">
+                <span class="ingredient-label-muted">Function</span>
+                <span class="ingredient-value-bold">Carrier &amp; Preservative</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Ingredient 4: Vegetable Glycerin -->
+          <article class="ingredient-card">
+            <div class="ingredient-img-wrapper">
+              <img src="assets/images/ingredients-still.jpg" alt="Glass dropper bottle labeled Pure Vegetable Glycerin" loading="lazy">
+              <span class="ingredient-pill-role">Natural Fixative</span>
+            </div>
+            <div class="ingredient-body">
+              <span class="ingredient-number">Ingredient 04</span>
+              <h3 class="ingredient-title">Vegetable Glycerin</h3>
+              <p class="ingredient-desc">
+                Plant-derived humectant included as a supporting ingredient. 
+                It acts as a natural fixative to anchor volatile floral notes to the skin, providing smooth hydration and gentle projection.
+              </p>
+              <div class="ingredient-meta-row">
+                <span class="ingredient-label-muted">Origin</span>
+                <span class="ingredient-value-bold">100% Plant Sourced</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Formula Transparency Table for Chemistry Evaluation -->
+        <div class="formula-transparency-card">
+          <div class="formula-header">
+            <div>
+              <span class="badge-tag">Academic Formulation Record</span>
+              <h4 style="margin-top: 6px; font-size: 1.3rem;">Batch #RB-001 Prototyping Formulation Breakdown</h4>
+            </div>
+            <span class="text-muted" style="font-size: 0.82rem;">Laboratory Scale: 250 mL Master Batch</span>
+          </div>
+
+          <div class="formula-table-wrap">
+            <table class="formula-table">
+              <thead>
+                <tr>
+                  <th>Component</th>
+                  <th>Chemical / INCI Name</th>
+                  <th>Nominal Ratio</th>
+                  <th>Primary Function</th>
+                  <th>Sourcing &amp; Safety</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Fresh Rose Petals</strong></td>
+                  <td><em>Rosa Damascena Flower Extract</em></td>
+                  <td>Active Essence (~15%)</td>
+                  <td>Olfactory core (fragrance)</td>
+                  <td>Hand-harvested, pesticide-free garden source</td>
+                </tr>
+                <tr>
+                  <td><strong>Distilled Water</strong></td>
+                  <td><em>Aqua (Purified Water)</em></td>
+                  <td>Hydrosol Phase (~15%)</td>
+                  <td>Diluent &amp; extraction medium</td>
+                  <td>Laboratory steam-distilled, 0 ppm minerals</td>
+                </tr>
+                <tr>
+                  <td><strong>Cosmetic-Grade Ethanol</strong></td>
+                  <td><em>Alcohol Denat. (Cosmetic 96%)</em></td>
+                  <td>Carrier Base (~68%)</td>
+                  <td>Solvent, dispersion &amp; microbial safety</td>
+                  <td>Pharma/cosmetic grade, denatured</td>
+                </tr>
+                <tr>
+                  <td><strong>Vegetable Glycerin</strong></td>
+                  <td><em>Glycerin (Plant origin)</em></td>
+                  <td>Supporting Fixative (~2%)</td>
+                  <td>Skin conditioning &amp; evaporation control</td>
+                  <td>USP grade plant-derived non-GMO</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION E: HOW IT'S MADE (7-STEP INTERACTIVE TIMELINE)
+         ==================================================================== -->
+    <section class="section-py process-section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Artisanal Method</div>
+          <h2>How It's Made: 7-Step Visual Timeline</h2>
+          <p>
+            From the morning garden harvest to the 14-day curing flacon. 
+            Click any step on the timeline below to explore the laboratory procedure.
+          </p>
+        </div>
+
+        <!-- Timeline Nav -->
+        <div class="timeline-interactive-nav" role="tablist">
+          <div class="timeline-progress-track" aria-hidden="true">
+            <div class="timeline-progress-fill" id="timeline-progress-fill"></div>
+          </div>
+
+          <button class="timeline-step-indicator active" data-step="1" onclick="updateTimelineStep(1)" role="tab" aria-label="Step 1: Harvest Petals">
+            <div class="step-indicator-bubble">1</div>
+            <span class="step-indicator-name">Harvest</span>
+          </button>
+
+          <button class="timeline-step-indicator" data-step="2" onclick="updateTimelineStep(2)" role="tab" aria-label="Step 2: Clean &amp; Crush">
+            <div class="step-indicator-bubble">2</div>
+            <span class="step-indicator-name">Clean &amp; Crush</span>
+          </button>
+
+          <button class="timeline-step-indicator" data-step="3" onclick="updateTimelineStep(3)" role="tab" aria-label="Step 3: Extract Fragrance">
+            <div class="step-indicator-bubble">3</div>
+            <span class="step-indicator-name">Extract</span>
+          </button>
+
+          <button class="timeline-step-indicator" data-step="4" onclick="updateTimelineStep(4)" role="tab" aria-label="Step 4: Filter Extract">
+            <div class="step-indicator-bubble">4</div>
+            <span class="step-indicator-name">Filter</span>
+          </button>
+
+          <button class="timeline-step-indicator" data-step="5" onclick="updateTimelineStep(5)" role="tab" aria-label="Step 5: Blend with Ethanol">
+            <div class="step-indicator-bubble">5</div>
+            <span class="step-indicator-name">Blend</span>
+          </button>
+
+          <button class="timeline-step-indicator" data-step="6" onclick="updateTimelineStep(6)" role="tab" aria-label="Step 6: Add Glycerin">
+            <div class="step-indicator-bubble">6</div>
+            <span class="step-indicator-name">Fixation</span>
+          </button>
+
+          <button class="timeline-step-indicator" data-step="7" onclick="updateTimelineStep(7)" role="tab" aria-label="Step 7: Maturation">
+            <div class="step-indicator-bubble">7</div>
+            <span class="step-indicator-name">Mature</span>
+          </button>
+        </div>
+
+        <!-- Spotlight Card for Selected Step -->
+        <div class="timeline-spotlight-card">
+          <div class="spotlight-media">
+            <img id="spotlight-img" src="assets/images/rose-petals.jpg" alt="Step demonstration image">
+          </div>
+          <div class="spotlight-content">
+            <div class="spotlight-step-tag" id="spotlight-tag">Step 01 &bull; Artisanal Extraction Phase</div>
+            <h3 class="spotlight-title" id="spotlight-title">1. Fresh Rose Petal Harvesting</h3>
+            <p class="spotlight-desc" id="spotlight-desc">
+              Fresh Rosa Damascena and garden rose petals are gently hand-picked at early dawn, 
+              before the morning sun evaporates the delicate volatile essential oil compounds within the petals.
+            </p>
+
+            <div class="spotlight-specs">
+              <div class="spotlight-spec-item">
+                <h6>Temperature Window</h6>
+                <p id="spotlight-temp">Ambient (18°C - 22°C)</p>
+              </div>
+              <div class="spotlight-spec-item">
+                <h6>Process Duration</h6>
+                <p id="spotlight-duration">Early Morning (6:00 - 8:00 AM)</p>
+              </div>
+              <div class="spotlight-spec-item" style="grid-column: span 2;">
+                <h6>Equipment Employed</h6>
+                <p id="spotlight-equipment">Breathable wicker baskets &amp; soft linen cloths</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Step Controls -->
+        <div class="timeline-nav-buttons">
+          <button class="btn btn-secondary btn-sm" onclick="prevTimelineStep()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            <span>Previous Step</span>
+          </button>
+          <span class="text-muted" style="font-size: 0.85rem;">Click any phase above or use navigation</span>
+          <button class="btn btn-primary btn-sm" onclick="nextTimelineStep()">
+            <span>Next Step</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION F: OLFACTORY PYRAMID & FRAGRANCE EXPLORER
+         ==================================================================== -->
+    <section class="section-py pyramid-section" id="olfactory">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Olfactory Architecture</div>
+          <h2>The RoseBloom Fragrance Pyramid</h2>
+          <p>
+            Understanding how natural floral volatiles evolve over time on warm skin.
+          </p>
+        </div>
+
+        <div class="pyramid-layout">
+          <!-- Pyramid Visual Stack -->
+          <div class="pyramid-visual">
+            <!-- Top Tier -->
+            <div class="pyramid-tier tier-top">
+              <div class="tier-header">
+                <span class="tier-title">Top Notes</span>
+                <span class="tier-duration">First 15-30 Mins</span>
+              </div>
+              <div class="tier-notes-text">Morning Dew, Crisp Rosebud, Green Stem</div>
+            </div>
+
+            <!-- Heart Tier -->
+            <div class="pyramid-tier tier-heart">
+              <div class="tier-header">
+                <span class="tier-title">Heart / Middle Notes</span>
+                <span class="tier-duration">30 Mins - 3 Hours</span>
+              </div>
+              <div class="tier-notes-text">Damask Rose Petal Extract, Pure Rose Water</div>
+            </div>
+
+            <!-- Base Tier -->
+            <div class="pyramid-tier tier-base">
+              <div class="tier-header">
+                <span class="tier-title">Base Notes</span>
+                <span class="tier-duration">3 - 5 Hours (Skin Scent)</span>
+              </div>
+              <div class="tier-notes-text">Glycerin Botanical Softness, Clean Velvet Veil</div>
+            </div>
+          </div>
+
+          <!-- Pyramid Explanation -->
+          <div class="pyramid-explanation">
+            <span class="badge-tag">Sensory Profile</span>
+            <h3 style="margin-top: 10px;">A Gentle, Intimate Scent Experience</h3>
+            <p style="margin-bottom: 1.2rem;">
+              Unlike synthetic commercial perfumes that rely on chemical musks and phthalate fixatives to project across an entire room, 
+              RoseBloom creates a soft personal aura. It blooms closely around you, making it ideal for classrooms, offices, 
+              and shared environments.
+            </p>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: var(--charcoal-700);">
+              <li style="display: flex; align-items: center; gap: 8px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--rose-600)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Opening:</strong> Refreshing burst reminiscent of walking into a rose garden at 7 AM.</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 8px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--rose-600)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Heart:</strong> True floral resonance without artificial powdered undertones.</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 8px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--rose-600)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Dry Down:</strong> Gentle botanical skin scent supported by non-greasy vegetable glycerin.</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-secondary btn-sm" style="margin-top: 1.8rem;" onclick="openQuizModal()">
+              <span>Take the Scent Matcher Quiz</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION G: SUSTAINABLE DESIGN & PACKAGING
+         ==================================================================== -->
+    <section class="section-py sustainability-section" id="sustainability">
+      <div class="container">
+        <div class="sustainability-grid">
+          <div class="sustainability-image">
+            <img 
+              src="assets/images/sustainable-box.jpg" 
+              alt="Eco-friendly packaging for RoseBloom with unbleached kraft paper box and natural wood cap" 
+              loading="lazy"
+            >
+          </div>
+
+          <div class="sustainability-content">
+            <div class="section-label" style="color: var(--sage-700);">Eco-Conscious Development</div>
+            <h2>Formulated with Respect for the Earth</h2>
+            <p style="margin-top: 1rem;">
+              Sustainable personal care begins at the prototyping phase. In creating RoseBloom, 
+              we made deliberate material choices to minimize plastic waste, support recycling, 
+              and honour the botanical sources from which we draw.
+            </p>
+
+            <div class="sustainability-features">
+              <div class="eco-feature-item">
+                <div class="eco-icon">♻️</div>
+                <div>
+                  <h5>100% Recyclable Glass Flacons</h5>
+                  <p>Our heavy-weight flint glass bottles are indefinitely recyclable and designed to be easily refilled or repurposed.</p>
+                </div>
+              </div>
+
+              <div class="eco-feature-item">
+                <div class="eco-icon">📦</div>
+                <div>
+                  <h5>Biodegradable Unbleached Packaging</h5>
+                  <p>Crafted from post-consumer recycled kraft cardstock, printed with plant-based soy inks with zero plastic lamination.</p>
+                </div>
+              </div>
+
+              <div class="eco-feature-item">
+                <div class="eco-icon">🌿</div>
+                <div>
+                  <h5>Ethically Harvested Petals</h5>
+                  <p>Rose petals are gathered from local organic gardens with zero pesticides or chemical defoliants.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION H: STUDENT INNOVATION & LAB SPECIFICATIONS
+         ==================================================================== -->
+    <section class="section-py lab-specs-section" id="lab-specs">
+      <div class="container">
+        <div class="lab-specs-card">
+          <div class="lab-specs-header">
+            <div>
+              <span class="badge-tag badge-prototype">Academic Documentation</span>
+              <h3>Chemical Prototyping Specifications</h3>
+              <p>
+                Developed as a collegiate applied chemistry and product formulation demonstration. 
+                Full batch metrics recorded for educational review and future small business scaling.
+              </p>
+            </div>
+            <button class="btn btn-outline-gold btn-sm" onclick="openPriceModal()">
+              <span>Modify Price Matrix</span>
+            </button>
+          </div>
+
+          <div class="lab-grid">
+            <div class="lab-stat-box">
+              <div class="lab-stat-label">Batch Designation</div>
+              <div class="lab-stat-val">#RB-001</div>
+              <div class="lab-stat-sub">Pilot Extraction Batch</div>
+            </div>
+
+            <div class="lab-stat-box">
+              <div class="lab-stat-label">Fragrance Concentration</div>
+              <div class="lab-stat-val">12 - 14%</div>
+              <div class="lab-stat-sub">Eau de Parfum Strength</div>
+            </div>
+
+            <div class="lab-stat-box">
+              <div class="lab-stat-label">Formulation pH</div>
+              <div class="lab-stat-val">5.4 ± 0.2</div>
+              <div class="lab-stat-sub">Skin Neutral Balance</div>
+            </div>
+
+            <div class="lab-stat-box">
+              <div class="lab-stat-label">Maturation Period</div>
+              <div class="lab-stat-val">14 Days</div>
+              <div class="lab-stat-sub">Dark Curing at 16°C</div>
+            </div>
+          </div>
+
+          <div class="lab-disclaimer-banner">
+            <span>🔬</span>
+            <p>
+              <strong>Academic Integrity Pledge:</strong> RoseBloom makes no medical, therapeutic, or guaranteed hypoallergenic claims. 
+              All product formulations adhere to student cosmetic safety standards. Always perform a standard 24-hour inner elbow patch test before liberal application.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION I: EARLY TESTER & PEER REVIEWS
+         ==================================================================== -->
+    <section class="section-py reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Campus &amp; Early Feedback</div>
+          <h2>What Early Testers Say</h2>
+          <p>
+            Feedback gathered from fellow university students, faculty evaluators, and fragrance enthusiasts 
+            during our initial sensory evaluation trials.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                “Most store perfumes give me an immediate headache from chemical musk. RoseBloom smells like real, dew-covered garden roses outside the chemistry hall. So refreshing!”
+              </p>
+            </div>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">AL</div>
+              <div>
+                <div class="reviewer-name">Aarav L.</div>
+                <div class="reviewer-badge">University Student Tester &bull; Batch #001</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                “As a chemistry project, the formulation balance is remarkable. Adding vegetable glycerin to temper ethanol evaporation gives it a lovely skin feel and soft dry-down.”
+              </p>
+            </div>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">DR</div>
+              <div>
+                <div class="reviewer-name">Dr. R. Sharma</div>
+                <div class="reviewer-badge">Department Faculty Reviewer</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                “The packaging looks like a boutique perfume from Paris or Milan! I love knowing exactly what 4 ingredients went into making my bottle. 10/10 prototype!”
+              </p>
+            </div>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">MS</div>
+              <div>
+                <div class="reviewer-name">Maya S.</div>
+                <div class="reviewer-badge">Design Student &bull; Perfume Enthusiast</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION J: FREQUENTLY ASKED QUESTIONS (FAQ)
+         ==================================================================== -->
+    <section class="section-py faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header">
+          <div class="section-label">Questions &amp; Answers</div>
+          <h2>Frequently Asked Questions</h2>
+          <p>Transparent information regarding our prototype formulation and care.</p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>Why is RoseBloom described as a prototype?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                RoseBloom is an independently formulated product developed as part of a chemistry prototyping and small business demonstration. 
+                To maintain ethical consumer standards, we transparently describe it as a prototype until full third-party clinical certification and commercial mass-production testing are completed.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How long does the scent typically last?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Because we use natural rose extracts rather than synthetic phthalate fixatives, RoseBloom has a natural wear time of approximately 3 to 5 hours. 
+                The vegetable glycerin in our formula helps anchor the fragrance molecules for a soft, comforting skin scent that evolves gracefully.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Why does the perfume contain cosmetic ethanol?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Cosmetic-grade ethanol is the standard organic solvent in traditional perfumery. It dissolves the hydrophobic essential oils extracted from the petals, 
+                enables a fine, non-clumping mist when atomized, and acts as an effective natural preservative against bacterial contamination.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can natural rose perfumes vary in color?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes! Because we use genuine rose petal maceration without synthetic color dyes, subtle variations in shade (from delicate champagne to pale blush pink) 
+                can occur between seasonal batches depending on harvest sunlight, petal pigmentation, and natural extraction yields.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is the best way to apply and store it?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Apply to pulse points (wrists, sides of neck, inside elbows) where skin warmth gently diffuses the delicate floral volatiles. 
+                Always store your bottle in a cool, dry place away from direct sunlight, radiator heat, and humidity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION K: PRE-ORDER / WAITLIST NEWSLETTER
+         ==================================================================== -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-box">
+          <span class="badge-tag">Stay Informed</span>
+          <h3 class="font-display" style="font-size: 2.2rem; margin-top: 8px;">Join the Batch #RB-002 Waitlist</h3>
+          <p style="margin-top: 10px; font-size: 0.95rem; color: var(--charcoal-600);">
+            Receive notifications on upcoming botanical prototype batches, extraction workshops, and student chemistry research papers.
+          </p>
+
+          <form class="newsletter-form" id="newsletter-form">
+            <input 
+              type="email" 
+              class="newsletter-input" 
+              id="newsletter-email" 
+              placeholder="Enter your student or personal email..." 
+              required
+            >
+            <button type="submit" class="btn btn-primary">
+              <span>Join Waitlist</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <div class="brand-symbol">🌸</div>
+            <div class="brand-text-wrap">
+              <span class="brand-title">RoseBloom</span>
+              <span class="brand-subtitle" style="color: var(--rose-400);">Natural Rose Perfume</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            “Capture the Essence of Nature.”<br>
+            A handmade perfume prototype developed using fresh rose petal extraction and sustainable botanical design principles.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">Our Story</a></li>
+            <li><a href="#product-showcase" class="footer-link">The Perfume</a></li>
+            <li><a href="#ingredients" class="footer-link">Ingredients</a></li>
+            <li><a href="#process" class="footer-link">How It's Made</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Research & Ethos -->
+        <div class="footer-col">
+          <h5>Project Links</h5>
+          <ul class="footer-links">
+            <li><a href="#olfactory" class="footer-link">Olfactory Pyramid</a></li>
+            <li><a href="#lab-specs" class="footer-link">Lab Formulation</a></li>
+            <li><a href="#sustainability" class="footer-link">Eco-Packaging</a></li>
+            <li><a href="#faq" class="footer-link">FAQs &amp; Care</a></li>
+            <li><a href="javascript:void(0)" onclick="openPriceModal()" class="footer-link">Edit Sample Prices</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Project Details -->
+        <div class="footer-col">
+          <h5>Prototype Details</h5>
+          <p style="font-size: 0.85rem; color: var(--charcoal-400); margin-bottom: 8px;">
+            <strong>Project:</strong> Chemical Prototyping &bull; PROTO<br>
+            <strong>Status:</strong> Batch #RB-001 Demonstration<br>
+            <strong>Formula:</strong> Petals, Water, Ethanol, Glycerin
+          </p>
+          <button class="btn btn-secondary btn-sm" onclick="openQuizModal()" style="margin-top: 10px;">
+            <span>Scent Matcher Quiz</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 RoseBloom Botanical Labs. Developed for academic presentation and demonstration.
+        </div>
+        <div class="academic-disclaimer-note">
+          Notice: RoseBloom is presented as a handcrafted prototype. No medical, hypoallergenic, or clinical longevity guarantees are claimed. All intellectual property and educational rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       INTERACTIVE CART DRAWER
+       ==================================================================== -->
+  <div class="cart-backdrop" id="cart-backdrop" onclick="closeCart()"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart Drawer">
+    <div class="cart-header">
+      <div class="cart-title-row">
+        <span>🛍️</span>
+        <h3>Sample Cart</h3>
+      </div>
+      <button class="cart-close-btn" onclick="closeCart()" aria-label="Close cart">&times;</button>
+    </div>
+
+    <!-- Items Wrap -->
+    <div class="cart-items-wrap" id="cart-items-list">
+      <!-- Injected by JavaScript -->
+    </div>
+
+    <!-- Footer & Summary -->
+    <div class="cart-footer">
+      <!-- Coupon row -->
+      <div class="coupon-row">
+        <input type="text" class="coupon-input" id="coupon-input" placeholder="Promo code (Try STUDENT10)">
+        <button class="btn btn-secondary btn-sm" onclick="applyCoupon()">Apply</button>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Sample Subtotal</span>
+        <span id="cart-subtotal-val">$28.00</span>
+      </div>
+
+      <div class="cart-summary-line" id="cart-discount-row" style="display: none; color: var(--rose-600);">
+        <span>Discount</span>
+        <span id="cart-discount-val">-$0.00</span>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Campus Delivery / Collection</span>
+        <span style="color: var(--sage-700); font-weight: 600;">FREE (Prototype Trial)</span>
+      </div>
+
+      <div class="cart-total-line">
+        <span>Estimated Total</span>
+        <span id="cart-total-val">$28.00</span>
+      </div>
+
+      <button class="btn btn-primary btn-checkout" onclick="openCheckoutModal()">
+        <span>Simulate Sample Checkout</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+      </button>
+
+      <p class="cart-prototype-notice">
+        Educational demonstration. No real financial transaction will take place.
+      </p>
+    </div>
+  </aside>
+
+  <!-- ====================================================================
+       MODAL 1: EDIT SAMPLE PRICES & CURRENCY (FOR PRESENTATION & GRADING)
+       ==================================================================== -->
+  <div class="modal-overlay" id="price-settings-modal" role="dialog" aria-modal="true" aria-labelledby="modal-price-title">
+    <div class="modal-dialog">
+      <button class="modal-close-x" onclick="closePriceModal()" aria-label="Close modal">&times;</button>
+      <span class="badge-tag">Evaluator Setting</span>
+      <h3 id="modal-price-title" style="margin: 8px 0 16px 0; font-size: 1.6rem;">Edit Sample Prices &amp; Currency</h3>
+      <p style="font-size: 0.88rem; color: var(--charcoal-600); margin-bottom: 1.5rem;">
+        Easily update sample pricing and currency symbol to test business models, international presentations, or grading scenarios.
+      </p>
+
+      <form onsubmit="savePriceSettings(event)">
+        <div class="form-group">
+          <label class="form-label" for="edit-currency-select">Currency</label>
+          <select id="edit-currency-select" class="form-control">
+            <option value="USD">USD ($) — US Dollars</option>
+            <option value="INR">INR (₹) — Indian Rupee</option>
+            <option value="EUR">EUR (€) — Euro</option>
+            <option value="GBP">GBP (£) — British Pound</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="edit-price-30">Sample Price: 30 mL Bottle</label>
+          <input type="number" step="0.5" id="edit-price-30" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="edit-price-50">Sample Price: 50 mL Bottle</label>
+          <input type="number" step="0.5" id="edit-price-50" class="form-control" required>
+        </div>
+
+        <div style="display: flex; gap: 10px; margin-top: 1.8rem;">
+          <button type="submit" class="btn btn-primary" style="flex: 1;">Save Changes</button>
+          <button type="button" class="btn btn-secondary" onclick="closePriceModal()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 2: SIMULATED SAMPLE CHECKOUT
+       ==================================================================== -->
+  <div class="modal-overlay" id="checkout-modal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-x" onclick="closeCheckoutModal()" aria-label="Close modal">&times;</button>
+      <span class="badge-tag badge-prototype">Prototype Demonstration Order</span>
+      <h3 style="margin: 8px 0 10px 0; font-size: 1.6rem;">Confirm Demonstration Sample</h3>
+      <p style="font-size: 0.88rem; color: var(--charcoal-600); margin-bottom: 1.5rem;">
+        Order Ref: <strong id="checkout-order-number">RB-102948</strong> &bull; Sample Total: <strong id="checkout-summary-total">$28.00</strong>
+      </p>
+
+      <form onsubmit="submitDemonstrationOrder(event)">
+        <div class="form-group">
+          <label class="form-label" for="checkout-name">Evaluator / Recipient Name</label>
+          <input type="text" class="form-control" id="checkout-name" placeholder="e.g. Professor Smith / Student Evaluator" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="checkout-email">Notification Email</label>
+          <input type="email" class="form-control" id="checkout-email" placeholder="e.g. evaluator@university.edu" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="checkout-dept">Campus Department / Pickup Spot</label>
+          <input type="text" class="form-control" id="checkout-dept" placeholder="e.g. Chemistry Lab 3B / Mailbox" value="Chemistry Prototyping Lab">
+        </div>
+
+        <div style="background: var(--cream-100); padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 1.5rem; font-size: 0.8rem; color: var(--charcoal-600);">
+          ℹ️ This is a simulated checkout for the college prototype demonstration. No real payment card is required.
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+          <button type="submit" class="btn btn-primary" style="flex: 1;">Complete Sample Order</button>
+          <button type="button" class="btn btn-secondary" onclick="closeCheckoutModal()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 3: SCENT FINDER QUIZ
+       ==================================================================== -->
+  <div class="modal-overlay" id="quiz-modal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-x" onclick="closeQuizModal()" aria-label="Close modal">&times;</button>
+      <span class="badge-tag">Sensory Ritual</span>
+      <h3 style="margin: 8px 0 10px 0; font-size: 1.6rem;">Find Your RoseBloom Scent Moment</h3>
+      
+      <div id="quiz-questions">
+        <p style="font-size: 0.88rem; color: var(--charcoal-600); margin-bottom: 1.2rem;">
+          When do you envision wearing your botanical fragrance?
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <button class="btn btn-secondary" style="justify-content: flex-start; text-align: left;" onclick="answerQuiz('day')">
+            <span>🌅 Crisp Morning Focus &amp; Lecture Classes</span>
+          </button>
+          <button class="btn btn-secondary" style="justify-content: flex-start; text-align: left;" onclick="answerQuiz('evening')">
+            <span>🌙 Calm Evening Strolls &amp; Special Gatherings</span>
+          </button>
+          <button class="btn btn-secondary" style="justify-content: flex-start; text-align: left;" onclick="answerQuiz('all')">
+            <span>🌿 Gentle Daily Skin Ritual (All Occasions)</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="quiz-result" style="display: none; margin-top: 1rem; text-align: center;">
+        <div style="font-size: 2.4rem; margin-bottom: 8px;">🌹</div>
+        <h4 style="font-family: var(--font-serif); font-size: 1.4rem;">Your Perfect Match: RoseBloom 50 mL</h4>
+        <p id="quiz-recommendation-text" style="font-size: 0.92rem; color: var(--charcoal-700); margin: 12px 0 1.5rem 0; line-height: 1.6;"></p>
+        <button class="btn btn-primary btn-sm" onclick="closeQuizModal(); location.href='#product-showcase'">Explore Your Match</button>
+        <button class="btn btn-secondary btn-sm" onclick="resetQuiz()">Retake Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
